@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>无标题文档</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<p>line 1</p>
+<p id = "apiText">line 2</p>
+<script>
+		var httpUrl = "http://api.tianapi.com/star/index?key=6292c8dc89486f84e435358844b69a4e&astro=";
+		var constellation_str = "pisces";
+		
+		fetch(httpUrl).then(request => {
+  			console.log(JSON.parse(request.body))
+			}).catch(console.error)
+		document.getElementById("apiText").innerHTML = ;
+	</script>
+</body>
+</html>

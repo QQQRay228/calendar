@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>T</title>
+
+  </head>
+
+  <body>
+    <p>line 1</p>
+    <p id="apiText">line 2</p>
+	
+	 <ol id="list"> </ol>
+	  
+    
+	  <script src="apiFetch.js">
+		load();
+    </script>
+	 
+	
+	  <p>input date test</p>
+<input type="date" id="dt" onchange="handler(event);"/>
+	  
+	  <script>
+	  function handler(e){
+	  	alert(e.target.value);
+	  }</script>
+  </body>
+</html>
+<!--> some comment <-->
